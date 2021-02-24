@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'iranyekan';
+    src: url('font/iranyekanwebregular(fanum)_0.ttf');
+}
+body{
+    font-family: iranyekan !important;
+    direction: rtl !important;
+    background-color: #e9e9e9 !important;
+}
+.login{
+    background: url("img/back-login.jpg");
+    height: 100%;
+
+}
+.login-box{
+    background-color: #ffffff;
+    padding: 10px;
+    width: 400px;
+    border-radius: 8px;
+}
+@media (max-width: 600px) and (min-width: 200px){
+    .login-box{
+        width: 100% !important;
+    }
+    .menu-com{
+        display: none !important;
+    }
+    .menu-mob{
+        display: block !important;
+    }
+    .content-margin{
+        margin-top: 100px !important;
+    }
+    .content-menu{
+        background-color: #fff !important;
+        padding: 8px;
+        width: 100% !important;
+        color: #000;
+        overflow: scroll !important;
+    }
+    .tab-content table{
+        width: 400px !important;
+    }
+    .tab-content{
+
+    }
+    .form-control{
+        width: 100% !important;
+    }
+}
+@keyframes loader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+.loader{
+    width: 150px;
+    animation: loader 3s infinite;
+}
